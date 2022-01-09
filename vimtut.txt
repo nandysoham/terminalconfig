@@ -1,0 +1,67 @@
+:q! --> for quiting 
+:wq --> for saving and quiting
+i --> for insert mode
+
+
+commands
+dd --> for deleting whole line
+G --> to go down
+gg --> to go to the top
+{ --> for shifting the whole block of code
+} --> to return to the whole block of code
+
+20 j --> it takes down 20 line --> this is for every vim command
+u --> for undoing the previous command
+ctrl + r --> for redoing the command
+
+yy --> for copying a whole line of code
+p --> will paste a line below to what is loaded in the clipboard
+P --> will paste it in the exact same line
+
+dd --> will act as the cut command which can be later pasted from the clipboard
+
+o --> will add a new line and will take back to the insert mode
+O --> will create a line above and will enter the insert mode
+
+
+---------- note all of these commands can have numbers in front --> will repeat the same
+
+===============	VISUAL MODE ==================
+(mostly used for selecting pieces of code)
+
+V --> for visual mode 
+	here you can select stuff and can do operation on it 
+
+
+================= MOVING ACROSS THE WORD IN A SENTNCE==================
+w --> for moving across a word
+b --> will take you to the word before 
+:30 --> will take you to line 30
+0 --> will take you to the front of the sentence
+$ --> will take you to the end of the sentence
+W --> ignore punctuation and same with B
+t! or t<any char> --> will take you to the next char that appears in the sentence and goes 1 left to it
+f! --> will take you the exact position  
+ % --> will take you to the oppostite bracket present in the text
+c (also called change)--> will delete the word and create an insert mode in the front of the word
+dw --> is for deleting the whole word
+D --> to delete the rest of the line from the cursor position
+C --> will delete everything from there and will put you in insert mode
+
+======================== SOME JOINED COMMANDS ======================
+dt} --> will delete till the next occurance of } in the buffer
+* --> will take you all the places where this word is being used
+t} --> will take this to the next occurance of } and ; on top will move to the next occurance of the letter t};;;;
+a --> will bring to the cursor mode just a place to the right where the cursor is
+A --> will go to the end of the line --> mostly needed when you need to remove something from the end of a line
+x --> will delete the character wherever the cursor is over
+
+
+
+======================== SOME REALLY COOL STUFF ========================
+~ will swap the case where you are currenctly
+. --> will rerun the command that you just did
+r --> to replace the current character with some other value
+> --. will indent the whole seleceted code
+>> --> will indent a specific line of code
+ 
